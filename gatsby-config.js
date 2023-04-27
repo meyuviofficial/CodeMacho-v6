@@ -6,5 +6,5 @@ module.exports = {
     title: `code-macho-v6`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
-}
+  plugins: ["gatsby-plugin-postcss"],
+};
