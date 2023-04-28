@@ -53,7 +53,7 @@ export default ({ data }) => {
           </a>
         </div>
       </section>
-      <section className="mt-12 mx-auto px-4 max-w-screen-xl md:px-8">
+      <section className="mt-12 mx-auto mb-auto px-4 max-w-screen-xl md:px-8">
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 place-content-center">
           {data.allMdx.nodes.map((node) => (
             <BlogCards
@@ -62,11 +62,10 @@ export default ({ data }) => {
               date={node.frontmatter.date}
               slug={node.frontmatter.slug}
             ></BlogCards>
-            // <li key={node.name}>{node.name}</li>
           ))}
         </div>
       </section>
-      <CustomFooter></CustomFooter>
+      <CustomFooter className="fixed"></CustomFooter>
     </html>
   );
 };

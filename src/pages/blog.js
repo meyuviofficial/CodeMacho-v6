@@ -8,23 +8,25 @@ import BlogCards from "../components/blogcards";
 const BlogPage = ({ data }) => {
   return (
     <html>
-      <Header></Header>
-
-      <div className="md:mx-auto">
-        <div className="grid grid-flow-col auto-cols-min md:grid-cols-4 md:auto-rows-max gap-4 mx-40 my-20">
-          {data.allMdx.nodes.map((node) => (
-            <BlogCards
-              blogtitle={node.frontmatter.title}
-              content={node.excerpt}
-              date={node.frontmatter.date}
-              slug={node.frontmatter.slug}
-            ></BlogCards>
-            // <li key={node.name}>{node.name}</li>
-          ))}
-        </div>
+      <div className="flex flex-col h-screen justify-between">
+        <Header></Header>
+        <section className="mb-auto md:mx-auto">
+          <div className="grid md:grid-cols-4 gap-4 mx-40 mt-20">
+            {data.allMdx.nodes.map((node) => (
+              <BlogCards
+                blogtitle={node.frontmatter.title}
+                content={node.excerpt}
+                date={node.frontmatter.date}
+                slug={node.frontmatter.slug}
+              ></BlogCards>
+              // <li key={node.name}>{node.name}</li>
+            ))}
+          </div>
+        </section>
+        <footer className="">
+          <Footer></Footer>
+        </footer>
       </div>
-
-      <Footer></Footer>
     </html>
   );
 };
