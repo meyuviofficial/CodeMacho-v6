@@ -16,9 +16,9 @@ const BlogCards = ({ blogtitle, content, date, slug }) => {
             {date}
           </time>
 
-          <a href={`/blog/${slug}`}>
+          <Link to={`/blog/${slug}`}>
             <h3 className="mt-0.5 text-lg text-gray-900">{blogtitle}</h3>
-          </a>
+          </Link>
 
           <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
             {content}

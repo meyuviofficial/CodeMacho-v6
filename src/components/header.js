@@ -1,13 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "gatsby";
 
 function Header() {
   const [state, setState] = useState(false);
 
   // Replace javascript:void(0) path with your path
   const navigation = [
-    { title: "Home", path: "javascript:void(0)" },
-    { title: "Blog", path: "javascript:void(0)" },
+    { title: "Home", path: "/" },
+    { title: "Blog", path: "/blog" },
     { title: "About", path: "javascript:void(0)" },
     { title: "Contact", path: "javascript:void(0)" },
     { title: "Projects", path: "javascript:void(0)" },
@@ -34,7 +35,7 @@ function Header() {
             {navigation.map((item, idx) => {
               return (
                 <li key={idx} className="hover:text-gray-800">
-                  <a href={item.path}>{item.title}</a>
+                  <Link to={item.path}>{item.title}</Link>
                 </li>
               );
             })}
