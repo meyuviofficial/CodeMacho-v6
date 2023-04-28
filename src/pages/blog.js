@@ -8,9 +8,9 @@ import BlogCards from "../components/blogcards";
 const BlogPage = ({ data }) => {
   return (
     <html>
-      <div className="flex flex-col h-screen justify-between">
+      <div className="flex flex-col h-screen w-screen">
         <Header></Header>
-        <section className="mb-auto md:mx-auto">
+        <section className="grid h-screen place-items-center mb-auto md:mx-auto">
           <div className="grid md:grid-cols-4 gap-4 mx-40 mt-20">
             {data.allMdx.nodes.map((node) => (
               <BlogCards
