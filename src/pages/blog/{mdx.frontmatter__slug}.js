@@ -8,9 +8,15 @@ const BlogPost = ({ data, children }) => {
   return (
     <html>
       <Header></Header>
-      <p>{data.mdx.frontmatter.date}</p>
-      {children}
-
+      <div className="flex mt-4 md:mt-20 justify-center bg-slate-200 mx-auto lg:mx-96 rounded-xl">
+        <article className="prose  lg:prose-l prose-img:rounded-xl prose-a:text-blue-600">
+          <h1 className="mb-4 pt-4 md:pt-16 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            {data.mdx.frontmatter.title}
+          </h1>
+          <p className="font-bold">{data.mdx.frontmatter.date}</p>
+          <p className="text-justify">{children}</p>
+        </article>
+      </div>
       <Footer></Footer>
     </html>
   );
