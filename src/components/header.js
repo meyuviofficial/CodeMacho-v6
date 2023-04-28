@@ -9,7 +9,7 @@ function Header() {
   const navigation = [
     { title: "Home", path: "/" },
     { title: "Blog", path: "/blog" },
-    { title: "About", path: "javascript:void(0)" },
+    { title: "About", path: "/about" },
     { title: "Contact", path: "javascript:void(0)" },
     { title: "Projects", path: "javascript:void(0)" },
   ];

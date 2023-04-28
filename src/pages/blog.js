@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import Seo from "../components/seo";
 import { graphql } from "gatsby";
 import BlogCards from "../components/blogcards";
+import Layout from "../components/layout";
 
 const BlogPage = ({ data }) => {
   return (
