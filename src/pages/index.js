@@ -3,7 +3,11 @@ import * as React from "react";
 import Header from "../components/header";
 import BlogCards from "../components/blogcards";
 import CustomFooter from "../components/footer";
-export default () => {
+import { useStaticQuery, graphql } from "gatsby";
+import Seo from "../components/seo";
+export const Head = () => <Seo title="Home page" />;
+
+export default ({data}) => {
   const navigation = [
     { title: "Home", path: "javascript:void(0)" },
     { title: "Blog", path: "javascript:void(0)" },
@@ -11,6 +15,7 @@ export default () => {
     { title: "Contact", path: "javascript:void(0)" },
     { title: "Projects", path: "javascript:void(0)" },
   ];
+
   return (
     // <!DOCTYPE html>
     <html>
@@ -49,14 +54,32 @@ export default () => {
         </div>
       </section>
       <div className="grid grid-cols-4 gap-4 mx-40 my-20">
-        <BlogCards> Hello World </BlogCards>
-        <BlogCards>"hello! This is how blog cards will appear"</BlogCards>
-        <BlogCards>"hello! This is how blog cards will appear"</BlogCards>
-        <BlogCards>"hello! This is how blog cards will appear"</BlogCards>
+        {data.allMdx.nodes.map((node) => (
+          <BlogCards
+            blogtitle={node.frontmatter.title}
+            content={node.excerpt}
+            date={node.frontmatter.date}
+          ></BlogCards>
+          // <li key={node.name}>{node.name}</li>
+        ))}
       </div>
-      <CustomFooter>
-        
-      </CustomFooter>
+      <CustomFooter></CustomFooter>
     </html>
   );
 };
+export const query = graphql`
+  query {
+    allMdx(sort: { frontmatter: { date: DESC } }) {
+      nodes {
+        frontmatter {
+          title
+          description
+          slug
+          date(formatString: "MMMM D, YYYY")
+        }
+        id
+        excerpt
+      }
+    }
+  }
+`;

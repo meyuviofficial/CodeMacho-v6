@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogCards = ({content}) => {
+const BlogCards = ({blogtitle, content, date, slug}) => {
   return (
     <article className="w-80 h-96 border-2 border-red-600 object-center overflow-hidden rounded-2xl shadow-2xl transition hover:shadow-lg">
       <img
@@ -10,13 +10,13 @@ const BlogCards = ({content}) => {
       />
 
       <div className="bg-white p-4 sm:p-6">
-        <time datetime="2022-10-10" className="block text-xs text-gray-500">
-          10th Oct 2022
+        <time datetime={date} className="block text-xs text-gray-500">
+          {date}
         </time>
 
-        <a href="#">
+        <a href={slug}>
           <h3 className="mt-0.5 text-lg text-gray-900">
-            How to position your furniture for positivity
+            {blogtitle}
           </h3>
         </a>
 
