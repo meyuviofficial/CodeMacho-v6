@@ -8,7 +8,7 @@ const BlogPost = ({ data, children }) => {
   return (
     <html>
       <Header></Header>
-      <div className="flex mt-4 md:mt-20 justify-center bg-slate-200 mx-auto lg:mx-96 rounded-xl">
+      <div className="flex mt-4 md:mt-20 drop-shadow-xl hover:drop-shadow-2xl justify-center bg-gradient-to-br from-gray-100 to-gray-300 mx-auto lg:mx-96 rounded-xl">
         <article className="prose  lg:prose-l prose-img:rounded-xl prose-a:text-blue-600">
           <h1 className="mb-4 pt-4 md:pt-16 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             {data.mdx.frontmatter.title}
