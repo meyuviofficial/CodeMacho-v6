@@ -12,12 +12,14 @@ const BlogCards = ({ blogtitle, content, date, slug }) => {
         />
 
         <div className="bg-white p-4 sm:p-6">
-          <time datetime={date} className="block text-xs text-gray-500">
+          <time datetime={date} className="block text-xs text-red-600">
             {date}
           </time>
 
           <Link to={`/blog/${slug}`}>
-            <h3 className="mt-0.5 text-lg text-gray-900">{blogtitle}</h3>
+            <h3 className="mt-0.5 text-lg font-bold text-red-600">
+              {blogtitle}
+            </h3>
           </Link>
 
           <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">

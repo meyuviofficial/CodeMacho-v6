@@ -35,7 +35,9 @@ function Header() {
             {navigation.map((item, idx) => {
               return (
                 <li key={idx} className="hover:text-gray-800">
-                  <Link to={item.path}>{item.title}</Link>
+                  <Link to={item.path} activeClassName="active text-gray-800">
+                    {item.title}
+                  </Link>
                 </li>
               );
             })}
