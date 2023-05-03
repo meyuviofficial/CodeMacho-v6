@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-function Profile({ name, title, children }) {
+function Profile({ name, title, twitter, github, linkedin, instagram, youtube, children }) {
   return (
     <div class="flex items-center justify-center min-h-screen">
       <div class="relative w-full group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border-2 border-red-600 shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl">
@@ -42,9 +42,9 @@ function Profile({ name, title, children }) {
                 <div class="flex space-x-2">
                   <a
                     class="p-1 -m-1 text-gray-400 hover:text-red-600 focus:outline-none focus-visible:ring-2 ring-primary"
-                    href="https://www.twitter.com/smilesharks"
+                    href={twitter}
                     rel="noopener"
-                    aria-label="Ariel Cerda on Twitter"
+                    aria-label="Yuvaraj Selvarajan on Twitter"
                     target="_blank"
                   >
                     <svg
@@ -59,9 +59,9 @@ function Profile({ name, title, children }) {
 
                   <a
                     class="p-1 -m-1 text-gray-400 hover:text-red-600 focus:outline-none focus-visible:ring-2 ring-primary"
-                    href="https://www.github.com/Smilesharks"
+                    href={github}
                     rel="noopener"
-                    aria-label="Ariel Cerda on Github"
+                    aria-label="Yuvaraj Selvarajan on Github"
                     target="_blank"
                   >
                     <svg
@@ -76,9 +76,9 @@ function Profile({ name, title, children }) {
 
                   <a
                     class="p-1 -m-1 text-gray-400 hover:text-red-600 focus:outline-none focus-visible:ring-2 ring-primary"
-                    href="https://www.linkedin.com/in/arielcerdahernandez/"
+                    href={linkedin}
                     rel="noopener"
-                    aria-label="Ariel Cerda on Linkedin"
+                    aria-label="Yuvaraj Selvarajan on Linkedin"
                     target="_blank"
                   >
                     <svg
@@ -93,9 +93,9 @@ function Profile({ name, title, children }) {
 
                   <a
                     class="p-1 -m-1 text-gray-400 hover:text-red-600 focus:outline-none focus-visible:ring-2 ring-primary"
-                    href="https://www.instagram.com/smilesharks"
+                    href={instagram}
                     rel="noopener"
-                    aria-label="Ariel Cerda on Instagram"
+                    aria-label="Yuvaraj Selvarajan on Instagram"
                     target="_blank"
                   >
                     <svg
@@ -115,9 +115,9 @@ function Profile({ name, title, children }) {
 
                   <a
                     class="p-1 -m-1 text-gray-400 hover:text-red-600 focus:outline-none focus-visible:ring-2 ring-primary"
-                    href="https://www.youtube.com/channel/UCWip2TrjNMXb0kg6LWbsNzw?sub_confirmation=1"
+                    href={youtube}
                     rel="noopener"
-                    aria-label="Ariel Cerda on Youtube"
+                    aria-label="Yuvaraj Selvarajan on Youtube"
                     target="_blank"
                   >
                     <svg

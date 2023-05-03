@@ -5,7 +5,14 @@ import Profile from "../components/profile";
 const About = () => {
   return (
     <Layout>
-      <Profile name="Yuvaraj Selvarajan" title="Site Reliability Engineer">
+      <Profile
+        name="Yuvaraj Selvarajan"
+        title="Site Reliability Engineer"
+        twitter="https://twitter.com/yuvarajselvaa"
+        github="https://github.com/yuvarajselva/"
+        linkedin="https://www.linkedin.com/in/yuvaraj-selvarajan/"
+        instagram="https://www.instagram.com/yuvarajselvaa/"
+      >
         Enthusiastic Software Engineer with almost 4 years of experience in
         managing the life-cycle of Cloud Infrastructure, Kubernetes and it’s
         Security Posture for thousands of Azure Subscriptions. Played a key role
