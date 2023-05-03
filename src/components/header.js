@@ -16,7 +16,7 @@ function Header() {
   ];
   return (
     <nav className="bg-red-600 w-full border-b md:border-0 md:static">
-      <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+      <div className="items-center px-4 max-w-screen-xl mx-auto md:flex">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/">
             <StaticImage
@@ -70,7 +70,10 @@ function Header() {
           <ul className="justify-end items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
             {navigation.map((item, idx) => {
               return (
-                <li key={idx} className="text-slate-200 hover:text-gray-800">
+                <li
+                  key={idx}
+                  className="font-bold text-slate-200 hover:text-gray-800"
+                >
                   <Link
                     to={item.path}
                     activeClassName="block active text-gray-800"
