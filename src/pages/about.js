@@ -1,6 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import Profile from "../components/profile";
+import Seo from "../components/seo";
 
 const About = () => {
   return (
