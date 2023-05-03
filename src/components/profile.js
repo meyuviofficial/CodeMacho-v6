@@ -1,5 +1,5 @@
 import React from "react";
-
+import { StaticImage } from "gatsby-plugin-image";
 function Profile({ name, title, children }) {
   return (
     <div class="flex items-center justify-center min-h-screen">
@@ -8,9 +8,9 @@ function Profile({ name, title, children }) {
           <div class="flex flex-wrap justify-center">
             <div class="flex justify-center w-full">
               <div class="relative">
-                <img
-                  src="CodeMacho/static/img/Profie_Compressed_square.jpg"
-                  class="dark:shadow-xl rounded-full border border-red-600 align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]"
+                <StaticImage
+                  src="../images/Profie_Compressed_square.jpg"
+                  class="dark:shadow-xl rounded-full border border-red-600 align-middle border-4 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]"
                 />
               </div>
             </div>

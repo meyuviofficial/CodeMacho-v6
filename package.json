@@ -18,6 +18,7 @@
     "@mdx-js/mdx": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "gatsby": "^5.8.1",
+    "gatsby-plugin-image": "^3.9.0",
     "gatsby-plugin-mdx": "^5.9.0",
     "gatsby-plugin-page-creator": "^5.9.0",
     "gatsby-plugin-sharp": "^5.9.0",

@@ -14,7 +14,10 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
-    "gatsby-plugin-mdx"
+    "gatsby-plugin-mdx",
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     // {
     //   options: {
     //     name: "posts",
