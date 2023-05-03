@@ -9,7 +9,7 @@ const BlogPost = ({ data, children }) => {
     <html>
       <div class="flex flex-col items-center">
         <Header></Header>
-        <div className="grid drop-shadow-2xl p-8 mt-12 mx-24 w-fit border-2 border-red-600 bg-gradient-to-br from-gray-100 to-gray-300 rounded-xl prose-headings:text-red-600">
+        <div className="flex justify-center drop-shadow-2xl p-8 mt-12 mx-24 w-screen md:w-2/4 border-2 border-red-600 bg-gradient-to-br from-gray-100 to-gray-300 rounded-xl prose-headings:text-red-600">
           <article className="prose lg:prose-l prose-img:rounded-xl prose-a:text-blue-600">
             <h1 className="mb-4 pt-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
               {data.mdx.frontmatter.title}
