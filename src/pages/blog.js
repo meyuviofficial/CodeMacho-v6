@@ -9,10 +9,14 @@ import Layout from "../components/layout";
 const BlogPage = ({ data }) => {
   return (
     <html>
-      <div className="flex flex-col h-screen w-screen">
-        <Header></Header>
-        <section className="grid h-screen place-items-center mb-auto md:mx-auto">
-          <div className="grid md:grid-cols-4 gap-4 mx-40 mt-20">
+      <Layout>
+        <div className="flex items-center justify-center min-w-screen px-3 mt-4 md:mt-8 md:px-0">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-red-600">
+            OUR BLOGS
+          </h1>
+        </div>
+        <section className="h-max flex items-center justify-center px-1 md:py-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-3 py-4 mt-5 md:mx-40 md:mt-20">
             {data.allMdx.nodes.map((node) => (
               <BlogCards
                 blogtitle={node.frontmatter.title}
@@ -24,10 +28,7 @@ const BlogPage = ({ data }) => {
             ))}
           </div>
         </section>
-        <footer className="">
-          <Footer></Footer>
-        </footer>
-      </div>
+      </Layout>
     </html>
   );
 };
