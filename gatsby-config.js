@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `code-macho-v6`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.codemacho.in`,
   },
   plugins: [
     {
