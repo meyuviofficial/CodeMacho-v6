@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 function Header() {
   const [state, setState] = useState(false);
@@ -18,11 +19,10 @@ function Header() {
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/">
-            <img
-              src="https://www.floatui.com/logo.svg"
-              width={120}
-              height={50}
-              alt="Float UI logo"
+            <StaticImage
+              src="../images/logo.png"
+              alt="Code Macho"
+              className="h-8 w-24"
             />
           </a>
           <div className="md:hidden">
