@@ -6,7 +6,7 @@ import BlogCards from "../components/blogcards";
 import CustomFooter from "../components/footer";
 import { useStaticQuery, graphql } from "gatsby";
 import Seo from "../components/seo";
-export const Head = () => <Seo title="Home page" />;
+export const Head = () => <Seo title="CodeMacho Blogs | Home page" />;
 
 export default ({ data }) => {
   const navigation = [

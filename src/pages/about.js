@@ -25,3 +25,4 @@ const About = () => {
 };
 
 export default About;
+export const Head = () => <Seo title="CodeMacho Blogs | About" />;
