@@ -12,7 +12,7 @@ const BlogPage = ({ data }) => {
       <Layout>
         <div className="flex items-center justify-center min-w-screen px-3 mt-4 md:mt-8 md:px-0">
           <h1 className="text-4xl md:text-6xl font-extrabold text-red-600">
-            OUR BLOGS
+            Our Blogs
           </h1>
         </div>
         <section className="h-max flex items-center justify-center px-1 md:py-12">

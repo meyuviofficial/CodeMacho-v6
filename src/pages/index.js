@@ -1,11 +1,10 @@
-import { useState } from "react";
 import * as React from "react";
-import Header from "../components/header";
 import Layout from "../components/layout";
 import BlogCards from "../components/blogcards";
-import CustomFooter from "../components/footer";
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Seo from "../components/seo";
+import { Link } from "gatsby";
+
 export const Head = () => <Seo title="CodeMacho Blogs | Home page" />;
 
 export default ({ data }) => {
@@ -29,31 +28,32 @@ export default ({ data }) => {
         <section className="justify-center mt-24 mx-auto max-w-screen-xl h-5/6 p-36 px-4 sm:px-8 mb-26">
           <div className="text-center space-y-4">
             <h1 className="text-gray-800 font-bold text-4xl md:text-5xl">
-              Optimize your website for
-              <span className="text-indigo-600"> Search engine</span>
+              Get started with
+              <span className="text-red-600"> Code Macho Blogs</span>
             </h1>
-            <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum
+            <p className="text-gray-500 max-w-xl mx-auto leading-relaxed md:text-lg">
+              Cloud can be easy, tech can be easy, anything can be easy ... if
+              you're a macho. How to become one?
             </p>
+            <bold className="text-red-600 text-2xl md:text-4xl">
+              You're at the right spot !!
+            </bold>
           </div>
           <div className="mt-12 justify-center items-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
-            <a
-              href="javascript:void(0)"
-              className="px-10 py-3.5 w-full bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
+            <Link
+              href="/blog"
+              className="px-10 py-3.5 rounded-2xl w-full bg-red-600 text-white text-center rounded-md shadow-md block sm:w-auto shadow-2xl"
             >
-              Get started
-            </a>
-            <a
-              href="javascript:void(0)"
-              className="px-10 py-3.5 w-full text-gray-500 text-center border rounded-md duration-300 hover:text-indigo-600 hover:shadow block sm:w-auto"
-            >
-              Try it out
-            </a>
+              Read More
+            </Link>
           </div>
         </section>
-        <section className="mt-12 mx-auto mb-auto px-4 max-w-screen-xl md:px-8">
+        <div className="flex items-center justify-center min-w-screen px-3 mt-4 md:mt-8 md:px-0">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-red-600">
+            Recent Posts
+          </h1>
+        </div>
+        <section className="flex items-center justify-center px-3">
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 place-content-center">
             {data.allMdx.nodes.map((node) => (
               <BlogCards
