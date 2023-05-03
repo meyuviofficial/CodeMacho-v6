@@ -11,8 +11,6 @@ function Header() {
     { title: "Home", path: "/" },
     { title: "Blog", path: "/blog" },
     { title: "About", path: "/about" },
-    { title: "Contact", path: "javascript:void(0)" },
-    { title: "Projects", path: "javascript:void(0)" },
   ];
   return (
     <nav className="bg-red-600 w-full border-b md:border-0 md:static">

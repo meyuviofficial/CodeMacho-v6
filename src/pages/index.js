@@ -4,18 +4,11 @@ import BlogCards from "../components/blogcards";
 import { graphql } from "gatsby";
 import Seo from "../components/seo";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const Head = () => <Seo title="CodeMacho Blogs | Home page" />;
 
 export default ({ data }) => {
-  const navigation = [
-    { title: "Home", path: "javascript:void(0)" },
-    { title: "Blog", path: "javascript:void(0)" },
-    { title: "About", path: "javascript:void(0)" },
-    { title: "Contact", path: "javascript:void(0)" },
-    { title: "Projects", path: "javascript:void(0)" },
-  ];
-
   return (
     // <!DOCTYPE html>
     <html>
