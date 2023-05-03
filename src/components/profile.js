@@ -2,7 +2,7 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 function Profile({ name, title, twitter, github, linkedin, instagram, youtube, children }) {
   return (
-    <div class="flex items-center justify-center min-h-screen">
+    <div class="flex items-center justify-center min-h-screen px-3">
       <div class="relative w-full group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border-2 border-red-600 shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl">
         <div class="pb-6">
           <div class="flex flex-wrap justify-center">
