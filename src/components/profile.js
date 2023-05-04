@@ -52,7 +52,7 @@ function Profile({
                   <a
                     class="p-1 -m-1 text-gray-400 hover:text-red-600 focus:outline-none focus-visible:ring-2 ring-primary"
                     href={twitter}
-                    rel="noopener"
+                    rel="noreferrer"
                     aria-label="Yuvaraj Selvarajan on Twitter"
                     target="_blank"
                   >
@@ -69,7 +69,7 @@ function Profile({
                   <a
                     class="p-1 -m-1 text-gray-400 hover:text-red-600 focus:outline-none focus-visible:ring-2 ring-primary"
                     href={github}
-                    rel="noopener"
+                    rel="noreferrer"
                     aria-label="Yuvaraj Selvarajan on Github"
                     target="_blank"
                   >
@@ -86,7 +86,7 @@ function Profile({
                   <a
                     class="p-1 -m-1 text-gray-400 hover:text-red-600 focus:outline-none focus-visible:ring-2 ring-primary"
                     href={linkedin}
-                    rel="noopener"
+                    rel="noreferrer"
                     aria-label="Yuvaraj Selvarajan on Linkedin"
                     target="_blank"
                   >
@@ -103,7 +103,7 @@ function Profile({
                   <a
                     class="p-1 -m-1 text-gray-400 hover:text-red-600 focus:outline-none focus-visible:ring-2 ring-primary"
                     href={instagram}
-                    rel="noopener"
+                    rel="noreferrer"
                     aria-label="Yuvaraj Selvarajan on Instagram"
                     target="_blank"
                   >
@@ -125,7 +125,7 @@ function Profile({
                   <a
                     class="p-1 -m-1 text-gray-400 hover:text-red-600 focus:outline-none focus-visible:ring-2 ring-primary"
                     href={youtube}
-                    rel="noopener"
+                    rel="noreferrer"
                     aria-label="Yuvaraj Selvarajan on Youtube"
                     target="_blank"
                   >

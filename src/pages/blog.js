@@ -1,6 +1,4 @@
 import * as React from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
 import Seo from "../components/seo";
 import { graphql } from "gatsby";
 import BlogCards from "../components/blogcards";
@@ -8,7 +6,7 @@ import Layout from "../components/layout";
 
 const BlogPage = ({ data }) => {
   return (
-    <html>
+    <html lang="en">
       <Layout>
         <div className="flex items-center justify-center min-w-screen px-3 mt-4 md:mt-8 md:px-0">
           <h1 className="text-4xl md:text-6xl font-extrabold text-red-600">

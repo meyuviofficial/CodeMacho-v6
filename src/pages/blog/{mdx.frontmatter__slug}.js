@@ -5,7 +5,7 @@ import { graphql } from "gatsby";
 
 const BlogPost = ({ data, children }) => {
   return (
-    <html>
+    <html lang="en">
       <Layout>
         <div class="flex items-center justify-center min-h-screen px-1">
           <div className="flex justify-center drop-shadow-2xl mx-3 p-8 mt-12 mx-24 w-screen md:w-2/4 border-2 border-red-600 bg-gradient-to-br from-gray-100 to-gray-300 rounded-xl prose-headings:text-red-600">

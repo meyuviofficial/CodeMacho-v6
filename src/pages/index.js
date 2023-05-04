@@ -4,14 +4,13 @@ import BlogCards from "../components/blogcards";
 import { graphql } from "gatsby";
 import Seo from "../components/seo";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 
 export const Head = () => <Seo title="CodeMacho Blogs | Home page" />;
 
-export default ({ data }) => {
+const Index = ({ data }) => {
   return (
     // <!DOCTYPE html>
-    <html>
+    <html lang="en">
       <meta charset="UTF-8"></meta>
       <meta
         name="viewport"
@@ -78,3 +77,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default Index;
