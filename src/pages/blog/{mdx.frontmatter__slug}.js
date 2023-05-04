@@ -2,8 +2,10 @@ import * as React from "react";
 import Seo from "../../components/seo";
 import Layout from "../../components/layout";
 import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const BlogPost = ({ data, children }) => {
+  const image = getImage(data.mdx.frontmatter.hero_image);
   return (
     <html lang="en">
       <Layout>
@@ -16,6 +18,10 @@ const BlogPost = ({ data, children }) => {
               <p className="font-bold text-red-600">
                 {data.mdx.frontmatter.date}
               </p>
+              <GatsbyImage
+                image={image}
+                alt={data.mdx.frontmatter.hero_image}
+              />
               <p className="text-justify">{children}</p>
             </article>
           </div>
@@ -31,6 +37,14 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
+        hero_image_alt
+        hero_image_credit_link
+        hero_image_credit_text
+        hero_image {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
     }
   }
