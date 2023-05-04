@@ -3,14 +3,15 @@ title: "How to handle Multi-Cluster setup for AKS in your local machine"
 description: "Handling multi cluster setup can be time-consuming to setup and this blog would make your job easier"
 slug: first-post
 date: "2023-05-04"
-hero_image: "https://images.unsplash.com/photo-1603912699214-92627f304eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3425&q=80"
-hero_image_alt: "Sample Blog Image"
+hero_image: "./hero_1.jpg"
+hero_image_alt: "A man juggling with balls"
+hero_image_credit_text: "Matt Bero"
+hero_image_credit_link: "https://unsplash.com/@mbeero?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+
 tags: ["Kubernetes", "Bash", "Scripting", "jq"]
 ---
 
 # Introduction
-
-![Hero Image](https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1190&q=80)
 
 > <bold className="font-bold text-red-600">
 >   Are you tired of juggling of between multiple clusters in your local
