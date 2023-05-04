@@ -15,7 +15,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d public"
+    "deploy": "echo www.codemacho.in > ./public/CNAME && gh-pages -d public"
   },
   "dependencies": {
     "@mdx-js/mdx": "^2.3.0",
