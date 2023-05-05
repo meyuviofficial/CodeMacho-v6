@@ -13,15 +13,20 @@ const Seo = ({ title }) => {
     }
   `);
   return (
-    <title>
+    <>
       {" "}
-      {title} | {data.site.siteMetadata.title}{" "}
-      <meta charset="UTF-8"/>
-      <meta name="description" content={data.site.siteMetadata.description}/>
-      <meta name="keywords" content={data.site.siteMetadata.keywords}/>
-      <meta name="author" content="Yuvaraj Selvarajan"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-    </title>
+      <title>
+        {title} | {data.site.siteMetadata.title}{" "}
+      </title>
+      <meta charset="UTF-8" />
+      <meta name="description" content={data.site.siteMetadata.description} />
+      <meta name="keywords" content={data.site.siteMetadata.keywords} />
+      <meta name="author" content="Yuvaraj Selvarajan" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+      ></meta>
+    </>
   );
 };
 
