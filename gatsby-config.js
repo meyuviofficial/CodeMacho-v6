@@ -1,12 +1,73 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+const siteUrl = process.env.URL || `https://www.codemacho.in`;
+
 module.exports = {
   siteMetadata: {
     title: `code-macho-v6`,
     siteUrl: `https://www.codemacho.in`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: "/",
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+          allMarkdownRemark {
+            nodes {
+              frontmatter {
+                date
+                slug
+              }
+            }
+          }
+        }`,
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+          allMarkdownRemark: { nodes: allPosts },
+        }) => {
+          const pathToDateMap = {};
+
+          allPosts.map((post) => {
+            pathToDateMap[post.frontmatter.slug] = {
+              date: post.frontmatter.date,
+            };
+          });
+
+          const pages = allPages.map((page) => {
+            return { ...page, ...pathToDateMap[page.path] };
+          });
+
+          return pages;
+        },
+        serialize: ({ path, date }) => {
+          let entry = {
+            url: path,
+            changefreq: "daily",
+            priority: 0.5,
+          };
+
+          if (date) {
+            entry.priority = 0.7;
+            entry.lastmod = date;
+          }
+
+          return entry;
+        },
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -23,6 +84,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     // {
     //   options: {
     //     name: "posts",
