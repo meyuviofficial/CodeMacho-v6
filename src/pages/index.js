@@ -5,7 +5,7 @@ import { graphql } from "gatsby";
 import Seo from "../components/seo";
 import { Link } from "gatsby";
 
-export const Head = () => <Seo title="CodeMacho Blogs | Home page" />;
+export const Head = () => <Seo title="Home page" />;
 
 const Index = ({ data }) => {
   return (
@@ -36,7 +36,7 @@ const Index = ({ data }) => {
               href="/blog"
               className="px-10 py-3.5 rounded-2xl w-full bg-red-600 text-white text-center rounded-md shadow-md block sm:w-auto shadow-2xl"
             >
-              Read More
+              Get Started
             </Link>
           </div>
         </section>

@@ -30,7 +30,7 @@ const BlogPage = ({ data }) => {
     </html>
   );
 };
-export const Head = () => <Seo title="CodeMacho Blogs | Blogs"></Seo>;
+export const Head = () => <Seo title="Blogs"></Seo>;
 export const query = graphql`
   query {
     allMdx(sort: { frontmatter: { date: DESC } }) {

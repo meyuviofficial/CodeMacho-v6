@@ -27,6 +27,7 @@ function Header() {
             <button
               className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
               onClick={() => setState(!state)}
+              aria-label="Menu"
             >
               {state ? (
                 <svg

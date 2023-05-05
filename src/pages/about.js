@@ -25,5 +25,5 @@ const About = () => {
   );
 };
 
-export const Head = () => <Seo title="CodeMacho Blogs | About" />;
+export const Head = () => <Seo title="About" />;
 export default About;

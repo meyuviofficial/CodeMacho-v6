@@ -1,11 +1,12 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
-const siteUrl = process.env.URL || `https://www.codemacho.in`;
 
 module.exports = {
   siteMetadata: {
-    title: `code-macho-v6`,
+    title: `Code Macho Blogs`,
+    description: `Blogs about Kubernetes, Cloud, APIs and Scripting`,
+    keywords: `Kubernetes, Cloud, Azure, AWS, Bash, PowerShell, Scripting, Terraform, Code`,
     siteUrl: `https://www.codemacho.in`,
   },
   plugins: [
