@@ -10,8 +10,8 @@ export const Head = () => <Seo title="Home page" />;
 const Index = ({ data }) => {
   return (
     // <!DOCTYPE html>
-    <html lang="en">
-      <meta charset="UTF-8"></meta>
+    <>
+      <meta charSet="UTF-8"></meta>
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
@@ -27,13 +27,13 @@ const Index = ({ data }) => {
               Cloud can be easy, tech can be easy, anything can be easy ... if
               you're a macho. How to become one?
             </p>
-            <bold className="text-red-600 text-2xl md:text-4xl">
+            <p className="text-red-600 text-2xl md:text-4xl">
               You're at the right spot !!
-            </bold>
+            </p>
           </div>
           <div className="mt-12 justify-center items-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
             <Link
-              href="/blog"
+              to="/blog"
               className="px-10 py-3.5 rounded-2xl w-full bg-red-600 text-white text-center rounded-md shadow-md block sm:w-auto shadow-2xl"
             >
               Get Started
@@ -58,7 +58,7 @@ const Index = ({ data }) => {
           </div>
         </section>
       </Layout>
-    </html>
+    </>
   );
 };
 export const query = graphql`

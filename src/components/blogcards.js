@@ -12,7 +12,7 @@ const BlogCards = ({ blogtitle, content, date, slug }) => {
         />
 
         <div className="bg-white p-4 sm:p-6">
-          <time datetime={date} className="block text-xs text-red-600">
+          <time dateTime={date} className="block text-xs text-red-600">
             {date}
           </time>
 

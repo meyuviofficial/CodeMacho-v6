@@ -13,24 +13,23 @@ tags: ["Kubernetes", "Bash", "Scripting", "jq"]
 
 # Introduction
 
-> <bold className="font-bold text-red-600">
->   Are you tired of juggling of between multiple clusters in your local
->   machine?{" "}
-> </bold>
+> Are you tired of juggling of between multiple clusters in your local
+> machine?{" "}
+>
 > Then, it is time to automate your local setup and it's configuration. If you're
-> working as a <bold className="font-extrabold text-red-600">
->   "cluster-admin"
-> </bold> for anyone of the enterprises, then this blog might be able to help you.
+> working as a 
+> "cluster-admin"
+>  for anyone of the enterprises, then this blog might be able to help you.
 
 ## Prerequisites
 
-- Bash Scripting
-- [JQ](https://gist.github.com/olih/f7437fb6962fb3ee9fe95bda8d2c8fa4)
+1. Bash Scripting
+2. [JQ](https://gist.github.com/olih/f7437fb6962fb3ee9fe95bda8d2c8fa4)
 
 ## Pros
 
-- Multiple clusters can configured locally in an automated way
-- If your local configuration is messed up (Which I do often :P), it is easy to fix it.
+1. Multiple clusters can configured locally in an automated way
+2. If your local configuration is messed up (Which I do often :P), it is easy to fix it.
 
 ## Manual Way?
 

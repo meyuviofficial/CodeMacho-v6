@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import {v4 as uuid} from "uuid";
 
 function Header() {
   const [state, setState] = useState(false);
@@ -68,9 +69,11 @@ function Header() {
         >
           <ul className="justify-end items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
             {navigation.map((item, idx) => {
+              const id=uuid();
+
               return (
                 <li
-                  key={idx}
+                  key={id}
                   className="font-bold text-slate-200 hover:text-gray-800"
                 >
                   <Link

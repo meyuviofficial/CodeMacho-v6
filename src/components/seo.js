@@ -18,7 +18,7 @@ const Seo = ({ title }) => {
       <title>
         {title} | {data.site.siteMetadata.title}{" "}
       </title>
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <meta name="description" content={data.site.siteMetadata.description} />
       <meta name="keywords" content={data.site.siteMetadata.keywords} />
       <meta name="author" content="Yuvaraj Selvarajan" />
